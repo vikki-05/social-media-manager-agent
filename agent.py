@@ -98,7 +98,22 @@ Generate ONE short, engaging social media caption with hashtags.
         )
 
     # -------------------------
-    # STEP 4: Agent Loop
+    # STEP 4: MEMORY (NEW FEATURE)
+    # -------------------------
+    def save_decision(self, content_type, post_time, score, caption):
+        os.makedirs("memory", exist_ok=True)
+
+        with open("memory/decision_log.txt", "a", encoding="utf-8") as f:
+            f.write("----- AGENT DECISION -----\n")
+            f.write(f"Best Content Type : {content_type}\n")
+            f.write(f"Best Time         : {post_time}:00 hrs\n")
+            f.write(f"Engagement Score  : {score:.2f}\n")
+            f.write("Generated Caption:\n")
+            f.write(caption + "\n")
+            f.write("--------------------------\n\n")
+
+    # -------------------------
+    # STEP 5: Agent Loop
     # -------------------------
     def run(self):
         content_type, score, post_time = self.decide_strategy()
@@ -122,6 +137,9 @@ Generate ONE short, engaging social media caption with hashtags.
             f"The agent used these insights to generate optimized content."
         )
         print("=" * 50)
+
+        # Save decision to memory
+        self.save_decision(content_type, post_time, score, caption)
 
 
 # -------------------------

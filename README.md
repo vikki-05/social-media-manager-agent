@@ -15,6 +15,16 @@ This project demonstrates how an AI agent can **observe**, **analyze**, **decide
 - 💻 CLI-based, lightweight, and cost-aware
 
 ---
+## 🌟 Creative / Unique Feature
+
+### Explainable Agent Memory
+The agent maintains a persistent memory log of its decisions, including:
+- Selected content strategy
+- Engagement score
+- Generated caption
+- Reasoning behind the decision
+
+This enables transparency, traceability, and lays the foundation for future self-improving agent behavior.
 
 ## 🧠 Agent Architecture
 
