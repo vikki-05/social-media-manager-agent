@@ -1,4 +1,4 @@
-# Social Media Manager Agent 🤖
+# Social Media Manager Agent 
 
 An autonomous, agentic AI system that analyzes historical social media engagement data and generates optimized content captions and posting strategies.
 
@@ -6,16 +6,16 @@ This project demonstrates how an AI agent can **observe**, **analyze**, **decide
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
-- 📊 Engagement analysis from historical data
-- 🧠 Autonomous decision-making (Agent Loop)
-- ✨ AI-powered caption generation (ScaleDown API)
-- 🔍 Transparent reasoning (Explainable AI)
-- 💻 CLI-based, lightweight, and cost-aware
+-  Engagement analysis from historical data
+-  Autonomous decision-making (Agent Loop)
+-  AI-powered caption generation (ScaleDown API)
+-  Transparent reasoning (Explainable AI)
+-  CLI-based, lightweight, and cost-aware
 
 ---
-## 🌟 Creative / Unique Feature
+## Creative / Unique Feature
 
 ### Explainable Agent Memory
 The agent maintains a persistent memory log of its decisions, including:
@@ -26,7 +26,7 @@ The agent maintains a persistent memory log of its decisions, including:
 
 This enables transparency, traceability, and lays the foundation for future self-improving agent behavior.
 
-## 🧠 Agent Architecture
+## Agent Architecture
 
 The agent follows a classic **Agent Loop**:
 
